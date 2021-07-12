@@ -1,0 +1,48 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CV{
+    margin-top: 25px;
+    width: 500px;
+    margin-right: 125px;
+}
+.contactForm{
+    border: 1px solid #333;
+    padding: 25px;
+    border-radius: 5px;
+}
+input{
+    display: flex;
+    padding: 5px;
+    margin-bottom: 15px;
+    
+}
+textarea{
+    margin-bottom: 25px;
+}
+label{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.message{
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn-primary{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    background-color: rgb(23, 96, 206);
+}
+@media (max-width:700px){
+    .CV{
+        width: 250px;
+    }
+    .contact{
+        width: 100px;
+    }
+}

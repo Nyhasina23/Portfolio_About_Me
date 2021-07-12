@@ -1,0 +1,136 @@
+
+.bodyContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    flex-wrap: wrap;
+}
+@font-face {
+    font-family: myfont;
+    src: url(Moonrising.ttf);
+}
+.FirstTitle{
+    margin-top: 50px;
+    font-family: myfont;
+    font-size: 25px;
+    text-align: center;
+}
+.BodyTitle{
+    width: 500px;
+}
+.BodyTitle2{
+    column-count: 2;
+    width: 800px;
+}
+.bodyImg{
+    background-image: linear-gradient(rgba(26, 24, 24, 0.781),rgba(0, 0, 0, 0.2)),  url('../images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 250px;
+
+}
+.container-midlle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-count: 3;
+    width: 1100px;
+    margin-bottom: -130px;
+}
+.middleImage{
+    width: 130px;
+    height: 80px;
+}
+.middleImage3{
+    width: 100px;
+    height: 80px;
+}
+.body-container-middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #b3afaf9c;
+}
+.middle{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #b3afaf9c;
+    padding: 40px;
+    border-radius: 15px;
+    position: relative;
+    top: -200px;
+    background: #ffffff;
+    opacity: 0.5;
+    box-shadow: 1px 1px 5px 1px;
+    margin-right:15px;    
+}
+.contactMe{
+    font-family: myfont;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+.middle:hover{
+    opacity: 1;
+    transition: opacity 1s ease;
+    background: linear-gradient(to right , #339af0 ,#8a2be2);
+}
+.middleTitle{
+    font-family: myfont;
+    font-size: 25px;
+}
+p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.about{
+    text-align: center;
+}   
+
+@media (max-width:700px){
+    .middle{
+        width: 400px;
+    }
+    .container-midlle{
+        display: grid;
+
+    }
+    .BodyTitle2{
+        display: grid;
+        width: 400px;
+    }
+    
+}
+@media (max-width:500px){
+    .middle{
+        width: 300px;
+    }
+    .container-midlle{
+        display: grid;
+
+    }
+    .BodyTitle2{
+        display: grid;
+        width: 400px;
+    }
+    
+}
+@media (max-width:400px){
+    .middle{
+        width: 200px;
+    }
+    .container-midlle{
+        display: grid;
+
+    }
+    .BodyTitle2{
+        display: grid;
+        width: 2    00px;
+    }
+    
+}
+

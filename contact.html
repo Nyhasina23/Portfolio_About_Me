@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/footerStyle.css">
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+
+</head>
+<body>
+    <div class="Header">
+        <div class="NavBar">
+            <a href="contact.html">Contact</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html">Home</a>
+        </div>
+        <h1 class="title">Bonjour, Ny Hasina Finaritra</h1>
+        <h1 class="title2">Developpeur / Designer UI/UX</h1>
+        <div class="btnContainer">
+            <button class="btnPrimary"><a class="contactMe" href="contact.html"> A propos de Moi</a></button>
+            <button class="btnPrimary"><a class="contactMe" href="images/CV_NyHasina.pdf"> Download CV</a></button>
+        </div>
+    </div>
+    <div class="contact">
+        <div>
+            <img class="CV" src="images/CV_NyHasina.jpg" alt="">
+        </div>
+        <div class="contactForm">
+            <h3 class="message">Envoyez vos messages ici</h3>
+            <form class="form-inline" action="">
+                <label for="nom">Nom : </label>
+                <input type="text"  required />
+                <label for="nom">Prénoms : </label>
+                <input type="text"  required/>
+                <label for="nom">Email : </label>
+                <input type="email" required />
+                <textarea name="" id="" cols="30" rows="10" required ></textarea><br>
+                <button class="btn-primary">Envoyer</button>
+                <div class="res"></div>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    window.addEventListener('load', function (e){
+        e.preventDefault();
+        let res = document.querySelector('.res');
+        let btn = document.querySelector('.btn-primary');
+        btn.addEventListener('click', function (e){
+            e.preventDefault();
+            let send = document.createElement('p');
+            res.appendChild(send);
+            res.innerText = "Votre message à été envoyé avec succès."
+        })
+    })
+    
+</script>
+</html>
